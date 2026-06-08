@@ -16,7 +16,7 @@ const SITE_CONFIG = {
     tiktokWork: { handle: "@andravads", url: "https://www.tiktok.com/@andravads", focus: "Salaryman & Work Life" },
     igGym: { handle: "@gymnyagema", url: "https://www.instagram.com/gymnyagema", focus: "Gym Lifestyle" },
     igWork: { handle: "@andravads", url: "https://www.instagram.com/andravads", focus: "Work & Daily Life" },
-    youtube: { handle: "Andrava Notes", url: "YOUR_YOUTUBE_URL_HERE", focus: "Long-form Work & Gym" },
+    youtube: { handle: "Andrava", url: "https://youtube.com/@andravads", focus: "Long-form Work & Gym" },
   },
 };
 
