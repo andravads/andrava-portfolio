@@ -677,7 +677,7 @@ function Pillars() {
             <div style={{ fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", color: T.faint, marginBottom: "1rem" }}>Sidequest</div>
             <div style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.4rem", marginBottom: "0.75rem" }}>Travel</div>
             {/* REPLACE WITH A 1600x900 TRAVEL WIDE SHOT: city, mountain, airport, or lifestyle travel image */}
-            <img src="https://placehold.co/300x400/161616/2a2a2a?text=Travel+Photo%0A1600x900" alt="Travel" style={{ width: "100%", flex: 1, objectFit: "cover", borderRadius: "1px", marginBottom: "1rem", border: `1px solid ${T.border}`, minHeight: "180px" }} />
+            <img src="/travel.jpg" alt="Travel" style={{ width: "100%", flex: 1, objectFit: "cover", borderRadius: "1px", marginBottom: "1rem", border: `1px solid ${T.border}`, minHeight: "180px" }} />
             <p style={{ color: T.muted, fontSize: "0.8rem", lineHeight: 1.75, marginBottom: "1rem" }}>
               City logs, business trips, and moments in between. Japan, Indonesia, the Middle East, and wherever work takes me next.
             </p>
