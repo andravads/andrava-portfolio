@@ -497,7 +497,7 @@ function Hero() {
         <div className="hero-img" style={{ position: "relative" }}>
           {/* REPLACE WITH A 1200x1600 VERTICAL HERO SHOT: Japanese City Boy outfit, clean city background, or gym-lifestyle portrait */}
           <img
-            src="https://placehold.co/560x720/161616/333333?text=Hero+Portrait%0A1200x1600"
+            src="/hero.jpg"
             alt="Andrava hero portrait"
             style={{ width: "100%", borderRadius: "2px", border: `1px solid ${T.border}` }}
           />
@@ -532,7 +532,7 @@ function Identity() {
             <div className="section-label" style={{ color: T.work }}>World 01</div>
             <div className="section-heading" style={{ marginBottom: "1.5rem" }}>The Salaryman</div>
             {/* REPLACE WITH A 1600x900 WORK LIFESTYLE PHOTO: laptop, office, airport, or corporate travel scene */}
-            <img src="https://placehold.co/480x280/0e0e0e/333?text=Work+Lifestyle+Photo%0A1600x900" alt="Work lifestyle" style={{ width: "100%", marginBottom: "1.5rem", borderRadius: "1px", border: `1px solid ${T.border}` }} />
+            <img src="/work.jpg" alt="Work lifestyle" style={{ width: "100%", marginBottom: "1.5rem", borderRadius: "1px", border: `1px solid ${T.border}` }} />
             <p style={{ color: T.muted, fontSize: "0.9rem", lineHeight: 1.8, marginBottom: "1.5rem" }}>
               Corporate grind, productivity habits, office dynamics, business travel, and the quiet discipline of staying sharp in a demanding career.
             </p>
@@ -549,7 +549,7 @@ function Identity() {
             <div className="section-label" style={{ color: T.gym }}>World 02</div>
             <div className="section-heading" style={{ marginBottom: "1.5rem" }}>The Lifter</div>
             {/* REPLACE WITH A 900x1200 GYM TRAINING PHOTO: lifting, mirror shot, or gym editorial portrait */}
-            <img src="https://placehold.co/480x280/0e0e0e/333?text=Gym+Training+Photo%0A900x1200" alt="Gym lifestyle" style={{ width: "100%", marginBottom: "1.5rem", borderRadius: "1px", border: `1px solid ${T.border}` }} />
+            <img src="/gym.jpg" alt="Gym lifestyle" style={{ width: "100%", marginBottom: "1.5rem", borderRadius: "1px", border: `1px solid ${T.border}` }} />
             <p style={{ color: T.muted, fontSize: "0.9rem", lineHeight: 1.8, marginBottom: "1.5rem" }}>
               Progressive overload, training consistency, practical gym education, and building a stronger body while holding down a full-time career.
             </p>
@@ -637,7 +637,7 @@ function Pillars() {
             </div>
             <div className="section-heading" style={{ marginBottom: "1rem" }}>Works</div>
             {/* REPLACE WITH A 1600x900 WORK LIFESTYLE PHOTO: office, laptop, airport scene */}
-            <img src="https://placehold.co/520x300/161616/2a2a2a?text=Work+Pillar+Image%0A1600x900" alt="Works" style={{ width: "100%", height: "180px", objectFit: "cover", borderRadius: "1px", marginBottom: "1.25rem", border: `1px solid ${T.border}` }} />
+            <img src="/work2.jpg" alt="Works" style={{ width: "100%", height: "180px", objectFit: "cover", borderRadius: "1px", marginBottom: "1.25rem", border: `1px solid ${T.border}` }} />
             <p style={{ color: T.muted, fontSize: "0.875rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
               The salaryman experience, documented honestly. Productivity that actually works, office culture observations, and how to navigate career growth without burning out.
             </p>
@@ -658,7 +658,7 @@ function Pillars() {
             </div>
             <div className="section-heading" style={{ marginBottom: "1rem" }}>Gym</div>
             {/* REPLACE WITH A 900x1200 GYM TRAINING PHOTO: lifting, squat rack, or gym editorial */}
-            <img src="https://placehold.co/520x300/161616/2a2a2a?text=Gym+Pillar+Image%0A900x1200" alt="Gym" style={{ width: "100%", height: "180px", objectFit: "cover", borderRadius: "1px", marginBottom: "1.25rem", border: `1px solid ${T.border}` }} />
+            <img src="/gym2.jpg" alt="Gym" style={{ width: "100%", height: "180px", objectFit: "cover", borderRadius: "1px", marginBottom: "1.25rem", border: `1px solid ${T.border}` }} />
             <p style={{ color: T.muted, fontSize: "0.875rem", lineHeight: 1.8, marginBottom: "1.25rem" }}>
               Not just form tutorials. Practical thinking on how to train consistently, track progress, and build a stronger physique while holding a full-time career.
             </p>
