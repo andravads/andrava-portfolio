@@ -1,0 +1,19 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Andrava — Work sharp. Lift heavy. Live deliberately.",
+  description: "Creator bridging 8-to-5 corporate life and bodybuilding discipline.",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
