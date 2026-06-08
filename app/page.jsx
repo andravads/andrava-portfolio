@@ -349,8 +349,28 @@ const GlobalStyles = () => (
     @media (max-width: 768px) {
       nav { padding: 1rem 1.5rem; }
       .nav-links { display: none; }
-      .container { padding: 0 1.5rem; }
-      section { padding: 5rem 0; }
+      .container { padding: 0 1.25rem; }
+      section { padding: 3.5rem 0; }
+
+      .hero-grid { grid-template-columns: 1fr !important; }
+      .hero-img { display: none !important; }
+      .identity-grid { grid-template-columns: 1fr !important; }
+      .identity-right { border-left: none !important; border-top: 1px solid rgba(255,255,255,0.07) !important; }
+      .pillars-grid { grid-template-columns: 1fr !important; }
+      .pillar-side { border-left: none !important; border-top: 1px solid rgba(255,255,255,0.07) !important; }
+      .social-grid { grid-template-columns: 1fr !important; }
+      .content-grid { grid-template-columns: 1fr !important; }
+      .stats-grid { grid-template-columns: 1fr 1fr !important; }
+      .links-grid { grid-template-columns: 1fr !important; }
+      .partner-grid { grid-template-columns: 1fr !important; }
+      .partner-cats { grid-template-columns: 1fr 1fr !important; }
+      .footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      .footer-bottom { flex-direction: column !important; gap: 0.5rem !important; text-align: center !important; }
+      .bridge-inner { flex-direction: column !important; gap: 1rem !important; }
+      .hero-btns { flex-direction: column !important; }
+      .hero-btns a { width: 100% !important; justify-content: center !important; }
+      .display-heading { font-size: 2.5rem !important; }
+      .filter-row { flex-direction: column !important; align-items: flex-start !important; }
     }
 
     /* Chart bar */
@@ -435,7 +455,7 @@ function Hero() {
         <div style={{ position: "absolute", bottom: "20%", left: "12%", width: "30vw", height: "1px", background: `linear-gradient(to right, transparent, ${T.faint}, transparent)` }} />
       </div>
 
-      <div className="container" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }}>
+      <div className="container hero-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }}>
         {/* Left */}
         <div>
           <div className="section-label" style={{ animationDelay: "0.1s" }}>Creator · Jakarta, Indonesia</div>
@@ -450,7 +470,7 @@ function Hero() {
             {SITE_CONFIG.subTagline}
           </p>
 
-          <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginBottom: "3rem" }}>
+          <div className="hero-btns" style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginBottom: "3rem" }}>
             <a href="#works" className="btn btn-accent">Explore Works</a>
             <a href="#gym" className="btn">Explore Gym</a>
             <a href={`mailto:${SITE_CONFIG.email}`} className="btn">Work With Me</a>
@@ -474,7 +494,7 @@ function Hero() {
         </div>
 
         {/* Right — Hero image */}
-        <div style={{ position: "relative" }}>
+        <div className="hero-img" style={{ position: "relative" }}>
           {/* REPLACE WITH A 1200x1600 VERTICAL HERO SHOT: Japanese City Boy outfit, clean city background, or gym-lifestyle portrait */}
           <img
             src="https://placehold.co/560x720/161616/333333?text=Hero+Portrait%0A1200x1600"
@@ -505,7 +525,7 @@ function Identity() {
   return (
     <section ref={ref} style={{ padding: "5rem 0", background: T.surface }}>
       <div className="container">
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0, border: `1px solid ${T.border}`, borderRadius: "2px", overflow: "hidden" }}>
+        <div className="identity-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0, border: `1px solid ${T.border}`, borderRadius: "2px", overflow: "hidden" }}>
           {/* Works side */}
           <div className="fade-up" style={{ padding: "4rem", borderRight: `1px solid ${T.border}`, position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, left: 0, width: "3px", height: "100%", background: T.work }} />
@@ -524,7 +544,7 @@ function Identity() {
           </div>
 
           {/* Gym side */}
-          <div className="fade-up" style={{ padding: "4rem", position: "relative", overflow: "hidden" }}>
+          <div className="identity-right fade-up" style={{ padding: "4rem", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, right: 0, width: "3px", height: "100%", background: T.gym }} />
             <div className="section-label" style={{ color: T.gym }}>World 02</div>
             <div className="section-heading" style={{ marginBottom: "1.5rem" }}>The Lifter</div>
@@ -542,7 +562,7 @@ function Identity() {
         </div>
 
         {/* Bridge */}
-        <div className="fade-up" style={{ marginTop: "2px", background: T.surface2, border: `1px solid ${T.border}`, padding: "3rem 4rem", display: "flex", alignItems: "center", gap: "3rem" }}>
+        <div className="fade-up bridge-inner" style={{ marginTop: "2px", background: T.surface2, border: `1px solid ${T.border}`, padding: "3rem 4rem", display: "flex", alignItems: "center", gap: "3rem" }}>
           <div style={{ flex: "0 0 auto" }}>
             <div style={{ width: "3rem", height: "1px", background: T.accent }} />
           </div>
@@ -608,7 +628,7 @@ function Pillars() {
     <section ref={ref}>
       <div className="container">
         <div className="section-label fade-up">Content Universe</div>
-        <div style={{ display: "grid", gridTemplateColumns: "2fr 2fr 1fr", gap: "1px", background: T.border }}>
+        <div className="pillars-grid" style={{ display: "grid", gridTemplateColumns: "2fr 2fr 1fr", gap: "1px", background: T.border }}>
 
           {/* Works pillar */}
           <div id="works" className="fade-up" style={{ background: T.surface, padding: "3rem" }}>
@@ -653,7 +673,7 @@ function Pillars() {
           </div>
 
           {/* Sidequest */}
-          <div className="fade-up" style={{ background: T.surface, padding: "2rem", borderLeft: `1px solid ${T.border}`, display: "flex", flexDirection: "column" }}>
+          <div className="pillar-side fade-up" style={{ background: T.surface, padding: "2rem", borderLeft: `1px solid ${T.border}`, display: "flex", flexDirection: "column" }}>
             <div style={{ fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", color: T.faint, marginBottom: "1rem" }}>Sidequest</div>
             <div style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.4rem", marginBottom: "0.75rem" }}>Travel</div>
             {/* REPLACE WITH A 1600x900 TRAVEL WIDE SHOT: city, mountain, airport, or lifestyle travel image */}
@@ -711,7 +731,7 @@ function SocialHub() {
         <div className="section-heading fade-up" style={{ marginBottom: "0.75rem" }}>Creator Command Centre</div>
         <p className="fade-up" style={{ color: T.muted, marginBottom: "3rem", maxWidth: "500px" }}>Two personas. One discipline. Content across TikTok, Instagram, and YouTube.</p>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1px", background: T.border }}>
+        <div className="social-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1px", background: T.border }}>
           {[
             { platform: "TikTok", ...s.tiktokGym, note: "" },
             { platform: "TikTok", ...s.tiktokWork, note: "" },
@@ -743,7 +763,7 @@ function FeaturedContent() {
     <section id="content" ref={ref}>
       <div className="container">
         <div className="section-label fade-up">Selected Posts</div>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "2.5rem", flexWrap: "wrap", gap: "1rem" }}>
+        <div className="filter-row" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "2.5rem", flexWrap: "wrap", gap: "1rem" }}>
           <div className="section-heading fade-up">Featured Content</div>
           <div style={{ display: "flex", gap: "0.5rem" }}>
             {filters.map((f) => (
@@ -934,7 +954,7 @@ function Partnership() {
   return (
     <section id="collab" ref={ref} style={{ background: T.surface }}>
       <div className="container">
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }}>
+        <div className="partner-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start" }}>
           {/* Left */}
           <div>
             <div className="section-label fade-up">Collaborations</div>
@@ -969,7 +989,7 @@ function Partnership() {
           {/* Right — categories */}
           <div className="fade-up">
             <div style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase", color: T.faint, marginBottom: "1.5rem" }}>Collaboration Categories</div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1px", background: T.border }}>
+            <div className="partner-cats" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1px", background: T.border }}>
               {[
                 ["Fitness Brands", "Equipment, apparel, supplements"],
                 ["Work & Office", "Productivity tools, work setup"],
@@ -1039,7 +1059,7 @@ function About() {
 function Footer() {
   return (
     <footer style={{ background: T.surface, borderTop: `1px solid ${T.border}`, padding: "3rem 0" }}>
-      <div className="container" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "3rem", alignItems: "start" }}>
+      <div className="container footer-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "3rem", alignItems: "start" }}>
         {/* Brand */}
         <div>
           <div style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.5rem", marginBottom: "0.5rem" }}>{SITE_CONFIG.name}</div>
@@ -1075,7 +1095,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="container" style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: `1px solid ${T.border}`, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
+      <div className="container footer-bottom" style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: `1px solid ${T.border}`, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
         <span style={{ fontSize: "0.7rem", color: T.faint }}>© 2025 Andrava. All rights reserved.</span>
         <span style={{ fontSize: "0.7rem", color: T.faint }}>Work sharp. Lift heavy. Live deliberately.</span>
       </div>
