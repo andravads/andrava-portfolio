@@ -401,6 +401,8 @@ const GlobalStyles = () => (
     .badge-gym { background: ${T.gymDim}; color: ${T.gym}; }
     .badge-works { background: ${T.workDim}; color: ${T.work}; }
 
+    .swipe-row::-webkit-scrollbar { display: none; }
+
     /* Animate on scroll */
     .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
@@ -1013,6 +1015,7 @@ function SwipeRow({ items }) {
       {/* Scrollable row */}
       <div
         ref={rowRef}
+        className="swipe-row"
         style={{
           display: "flex",
           gap: "1px",
@@ -1024,7 +1027,6 @@ function SwipeRow({ items }) {
           background: T.border,
         }}
       >
-        <style>{`.swipe-row::-webkit-scrollbar { display: none; }`}</style>
         {items.filter((i) => i.active).map((item) => (
           <div
             key={item.title}
