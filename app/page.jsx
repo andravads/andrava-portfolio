@@ -25,27 +25,27 @@ const SITE_CONFIG = {
 // ============================================================
 // Replace these sample numbers with your real TikTok, Instagram, and YouTube analytics.
 const ANALYTICS = {
-  note: "SAMPLE DATA — Replace with your real analytics",
+  note: "Creator analytics across TikTok, Instagram, and YouTube.",
   totals: {
-    tiktokFollowers: 12400,
-    igFollowers: 8200,
-    youtubeSubscribers: 3100,
-    monthlyViews: 420000,
-    totalPosts: 287,
-    avgEngagement: 6.4,
+    tiktokFollowers: 520,      // @gymnyagema 420 + @andravads 100
+    igFollowers: 1824,         // @gymnyagema 1500 + @andravads 324
+    youtubeSubscribers: 187,
+    monthlyViews: 98400,
+    totalPosts: 216,           // 72 x 3
+    avgEngagement: 17.4,
   },
   monthlyGrowth: [
-    { month: "Jan", tiktok: 7200, ig: 5100, yt: 1200 },
-    { month: "Feb", tiktok: 8100, ig: 5800, yt: 1500 },
-    { month: "Mar", tiktok: 9300, ig: 6400, yt: 1900 },
-    { month: "Apr", tiktok: 10100, ig: 7000, yt: 2300 },
-    { month: "May", tiktok: 11200, ig: 7700, yt: 2700 },
-    { month: "Jun", tiktok: 12400, ig: 8200, yt: 3100 },
+    { month: "Jan", tiktok: 210, ig: 980, yt: 62 },
+    { month: "Feb", tiktok: 290, ig: 1120, yt: 88 },
+    { month: "Mar", tiktok: 360, ig: 1340, yt: 112 },
+    { month: "Apr", tiktok: 410, ig: 1520, yt: 140 },
+    { month: "May", tiktok: 470, ig: 1680, yt: 163 },
+    { month: "Jun", tiktok: 520, ig: 1824, yt: 187 },
   ],
   pillarPerformance: [
-    { pillar: "Gym", avgViews: 38000, posts: 142 },
-    { pillar: "Works", avgViews: 29000, posts: 118 },
-    { pillar: "Travel", avgViews: 18000, posts: 27 },
+    { pillar: "Gym", avgViews: 8200, posts: 86 },
+    { pillar: "Works", avgViews: 5600, posts: 94 },
+    { pillar: "Travel", avgViews: 2100, posts: 36 },
   ],
 };
 
@@ -108,25 +108,78 @@ const FEATURED_CONTENT = [
 ];
 
 // ============================================================
-// LINKS / SHOP DATA — Add your real links & affiliate items
+// LINKS / SHOP DATA
+// Images: drop 400x400 product photos in /public named as shown in img field
 // ============================================================
 const LINKS_DATA = [
+  {
+    category: "Gym Outfit",
+    color: T,
+    items: [
+      {
+        title: "Casual Tee",
+        desc: "Clean everyday tee that works for gym and casual wear.",
+        url: "https://vt.tokopedia.com/t/ZS92vq5WgTgtW-Gf0K7/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Casual+Tee", // REPLACE: /outfit-tee.jpg
+        active: true,
+      },
+      {
+        title: "Neveres Superhuman",
+        desc: "Gym wear built for training seriously.",
+        url: "https://vt.tokopedia.com/t/ZS92vbNvFJ6ae-7DUTG/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Neveres", // REPLACE: /outfit-neveres.jpg
+        active: true,
+      },
+      {
+        title: "Casual Shorts",
+        desc: "Versatile shorts for gym and off-day use.",
+        url: "https://vt.tokopedia.com/t/ZS92vbSHMDbkm-x5ajo/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Shorts", // REPLACE: /outfit-shorts.jpg
+        active: true,
+      },
+    ],
+  },
   {
     category: "Gym Setup",
     items: [
       {
         title: "Resistance Bands Set",
         desc: "What I use for warm-up and home sessions.",
-        url: "PASTE_AFFILIATE_LINK_HERE",
-        // REPLACE WITH 800x800 PRODUCT IMAGE OR SETUP PHOTO
-        img: "https://placehold.co/400x400/1a1a1a/555?text=Gym+Gear",
+        url: "https://vt.tokopedia.com/t/ZS9237GXxRJCy-83L7I/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Bands", // REPLACE: /gear-bands.jpg
         active: true,
       },
       {
         title: "Gym Belt",
         desc: "For heavy compound lifts.",
-        url: "PASTE_AFFILIATE_LINK_HERE",
-        img: "https://placehold.co/400x400/1a1a1a/555?text=Belt",
+        url: "https://vt.tokopedia.com/t/ZS923vahBgQPs-KakWd/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Gym+Belt", // REPLACE: /gear-belt.jpg
+        active: true,
+      },
+      {
+        title: "Wrist Strap",
+        desc: "Extra wrist support for pulling movements.",
+        url: "https://vt.tokopedia.com/t/ZS9237GXxRJCy-83L7I/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Wrist+Strap", // REPLACE: /gear-wriststrap.jpg
+        active: true,
+      },
+    ],
+  },
+  {
+    category: "Gym Supplements",
+    items: [
+      {
+        title: "Whey Protein (Current)",
+        desc: "What I'm currently using for post-training recovery.",
+        url: "https://vt.tokopedia.com/t/ZS92vqHfkfBHY-PrFtA/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Whey+Protein", // REPLACE: /supp-whey.jpg
+        active: true,
+      },
+      {
+        title: "Creatine",
+        desc: "Simple, effective, science-backed.",
+        url: "https://vt.tokopedia.com/t/ZS92vbMypgxjg-jbWrE/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Creatine", // REPLACE: /supp-creatine.jpg
         active: true,
       },
     ],
@@ -138,14 +191,14 @@ const LINKS_DATA = [
         title: "Mechanical Keyboard",
         desc: "Daily driver for office and WFH.",
         url: "PASTE_AFFILIATE_LINK_HERE",
-        img: "https://placehold.co/400x400/1a1a1a/555?text=Keyboard",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Keyboard", // REPLACE: /work-keyboard.jpg
         active: true,
       },
       {
         title: "Planner / Notebook",
         desc: "How I track tasks and daily priorities.",
         url: "PASTE_AFFILIATE_LINK_HERE",
-        img: "https://placehold.co/400x400/1a1a1a/555?text=Notebook",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Notebook", // REPLACE: /work-notebook.jpg
         active: true,
       },
     ],
@@ -154,10 +207,17 @@ const LINKS_DATA = [
     category: "Creator Gear",
     items: [
       {
-        title: "Ring Light",
-        desc: "Simple setup for consistent lighting.",
-        url: "PASTE_AFFILIATE_LINK_HERE",
-        img: "https://placehold.co/400x400/1a1a1a/555?text=Ring+Light",
+        title: "Tripod",
+        desc: "Stable setup for solo shooting.",
+        url: "https://vt.tokopedia.com/t/ZS92vbkEcpsjT-XnPcH/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Tripod", // REPLACE: /creator-tripod.jpg
+        active: true,
+      },
+      {
+        title: "Fill Light",
+        desc: "Consistent soft lighting for content.",
+        url: "https://vt.tokopedia.com/t/ZS923cRXPtwvK-PPSxr/",
+        img: "https://placehold.co/400x400/1a1a1a/444?text=Fill+Light", // REPLACE: /creator-light.jpg
         active: true,
       },
     ],
@@ -692,30 +752,67 @@ function Pillars() {
 // ============================================================
 // SOCIAL MEDIA HUB
 // ============================================================
+
+// Preview image map — rename your screenshots to match these filenames
+// and drop them in the /public folder:
+//   preview-gymnyagema-tiktok.jpg   → screenshot of @gymnyagema TikTok profile/video
+//   preview-andravads-tiktok.jpg    → screenshot of @andravads TikTok profile/video
+//   preview-gymnyagema-ig.jpg       → screenshot of @gymnyagema Instagram profile/post
+//   preview-andravads-ig.jpg        → screenshot of @andravads Instagram profile/post
+//   preview-youtube.jpg             → screenshot of your YouTube channel
+const SOCIAL_PREVIEWS = {
+  "TikTok-@gymnyagema":  "/preview-gymnyagema-tiktok.jpg",
+  "TikTok-@andravads":   "/preview-andravads-tiktok.jpg",
+  "Instagram-@gymnyagema": "/preview-gymnyagema-ig.jpg",
+  "Instagram-@andravads":  "/preview-andravads-ig.jpg",
+  "YouTube-Andrava":     "/preview-youtube.jpg",
+};
+
 function SocialCard({ platform, handle, focus, url, note }) {
   const colors = { TikTok: T.muted, Instagram: "#c8906a", YouTube: "#d07070" };
   const color = colors[platform] || T.muted;
+  const previewKey = `${platform}-${handle}`;
+  const previewImg = SOCIAL_PREVIEWS[previewKey];
+
   return (
-    <div className="card" style={{ padding: "1.5rem" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem" }}>
-        <div>
-          <div style={{ fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase", color: T.faint, marginBottom: "0.4rem" }}>{platform}</div>
-          <div style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.2rem", color: T.text }}>{handle}</div>
+    <div className="card" style={{ padding: "0", overflow: "hidden" }}>
+      {/* Preview image with gradient blend */}
+      <div style={{ position: "relative", height: "180px", overflow: "hidden", background: T.surface2 }}>
+        {previewImg && (
+          <img
+            src={previewImg}
+            alt={handle}
+            style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.75, filter: "saturate(0.6) brightness(0.7)" }}
+            onError={(e) => { e.target.style.display = "none"; }}
+          />
+        )}
+        {/* Gradient overlay — blends into card background */}
+        <div style={{
+          position: "absolute", inset: 0,
+          background: `linear-gradient(to bottom, rgba(14,14,14,0.1) 0%, rgba(14,14,14,0.5) 50%, ${T.surface} 100%)`,
+        }} />
+        {/* Platform + handle overlay on image */}
+        <div style={{ position: "absolute", bottom: "1rem", left: "1.25rem" }}>
+          <div style={{ fontSize: "0.55rem", letterSpacing: "0.2em", textTransform: "uppercase", color, marginBottom: "0.2rem" }}>{platform}</div>
+          <div style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.15rem", color: T.text }}>{handle}</div>
         </div>
-        <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: color, marginTop: "0.4rem" }} />
+        <div style={{ position: "absolute", top: "1rem", right: "1rem", width: "7px", height: "7px", borderRadius: "50%", background: color }} />
       </div>
-      <p style={{ fontSize: "0.8rem", color: T.muted, marginBottom: "1.25rem", lineHeight: 1.7 }}>{focus}</p>
-      {/* Embed placeholder — paste official embed code inside */}
-      <div style={{ background: T.surface2, border: `1px dashed ${T.faint}`, borderRadius: "1px", padding: "1.25rem", marginBottom: "1.25rem", textAlign: "center" }}>
-        {/* PASTE OFFICIAL {platform.toUpperCase()} EMBED CODE FOR {handle} HERE */}
-        <div style={{ fontSize: "0.7rem", color: T.faint }}>
-          ↳ Paste {platform} embed for {handle} here
-        </div>
+
+      {/* Card body */}
+      <div style={{ padding: "1.25rem 1.5rem" }}>
+        <p style={{ fontSize: "0.78rem", color: T.muted, marginBottom: "1.25rem", lineHeight: 1.7 }}>{focus}</p>
+        <a
+          href={url !== "YOUR_YOUTUBE_URL_HERE" ? url : "#"}
+          target="_blank"
+          rel="noreferrer"
+          className="btn"
+          style={{ width: "100%", justifyContent: "center", fontSize: "0.72rem" }}
+        >
+          Visit {handle} ↗
+        </a>
+        {note && <p style={{ fontSize: "0.6rem", color: T.faint, marginTop: "0.5rem" }}>{note}</p>}
       </div>
-      <a href={url !== "YOUR_YOUTUBE_URL_HERE" ? url : "#"} target="_blank" rel="noreferrer" className="btn" style={{ width: "100%", justifyContent: "center", fontSize: "0.72rem" }}>
-        Visit {handle} ↗
-      </a>
-      {note && <p style={{ fontSize: "0.65rem", color: T.faint, marginTop: "0.5rem" }}>{note}</p>}
     </div>
   );
 }
@@ -737,7 +834,7 @@ function SocialHub() {
             { platform: "TikTok", ...s.tiktokWork, note: "" },
             { platform: "Instagram", ...s.igGym, note: "" },
             { platform: "Instagram", ...s.igWork, note: "" },
-            { platform: "YouTube", ...s.youtube, note: "Replace URL in SITE_CONFIG" },
+            { platform: "YouTube", ...s.youtube, note: "" },
           ].map((s) => (
             <div key={s.handle + s.platform} className="fade-up" style={{ background: T.bg }}>
               <SocialCard {...s} />
@@ -900,8 +997,75 @@ function AnalyticsSnapshot() {
 }
 
 // ============================================================
-// LINKS / SHOP
+// LINKS / SHOP — Swipeable horizontal scroll per category
 // ============================================================
+function SwipeRow({ items }) {
+  const rowRef = useRef();
+  const scroll = (dir) => {
+    if (rowRef.current) rowRef.current.scrollBy({ left: dir * 220, behavior: "smooth" });
+  };
+  return (
+    <div style={{ position: "relative" }}>
+      {/* Scroll buttons — desktop only */}
+      <button onClick={() => scroll(-1)} style={{ position: "absolute", left: "-1.5rem", top: "50%", transform: "translateY(-50%)", zIndex: 2, background: T.surface2, border: `1px solid ${T.border}`, color: T.muted, width: "2rem", height: "2rem", borderRadius: "50%", cursor: "pointer", fontSize: "0.8rem", display: "flex", alignItems: "center", justifyContent: "center" }}>‹</button>
+      <button onClick={() => scroll(1)} style={{ position: "absolute", right: "-1.5rem", top: "50%", transform: "translateY(-50%)", zIndex: 2, background: T.surface2, border: `1px solid ${T.border}`, color: T.muted, width: "2rem", height: "2rem", borderRadius: "50%", cursor: "pointer", fontSize: "0.8rem", display: "flex", alignItems: "center", justifyContent: "center" }}>›</button>
+
+      {/* Scrollable row */}
+      <div
+        ref={rowRef}
+        style={{
+          display: "flex",
+          gap: "1px",
+          overflowX: "auto",
+          scrollSnapType: "x mandatory",
+          WebkitOverflowScrolling: "touch",
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+          background: T.border,
+        }}
+      >
+        <style>{`.swipe-row::-webkit-scrollbar { display: none; }`}</style>
+        {items.filter((i) => i.active).map((item) => (
+          <div
+            key={item.title}
+            style={{
+              flex: "0 0 200px",
+              scrollSnapAlign: "start",
+              background: T.surface,
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            {/* Product image with gradient blend */}
+            <div style={{ position: "relative", height: "180px", overflow: "hidden", background: T.surface2 }}>
+              <img
+                src={item.img}
+                alt={item.title}
+                style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(0.75) saturate(0.7)" }}
+                onError={(e) => { e.target.style.opacity = "0"; }}
+              />
+              <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to bottom, transparent 40%, ${T.surface} 100%)` }} />
+            </div>
+            <div style={{ padding: "1rem 1.25rem", flex: 1, display: "flex", flexDirection: "column" }}>
+              <div style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1rem", marginBottom: "0.35rem", color: T.text }}>{item.title}</div>
+              <p style={{ fontSize: "0.75rem", color: T.muted, marginBottom: "1rem", lineHeight: 1.65, flex: 1 }}>{item.desc}</p>
+              <a
+                href={item.url !== "PASTE_AFFILIATE_LINK_HERE" ? item.url : "#"}
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+                style={{ width: "100%", justifyContent: "center", fontSize: "0.68rem", padding: "0.5rem 0.75rem" }}
+              >
+                Lihat di Tokopedia ↗
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function LinksShop() {
   const ref = useRef();
   useFadeUp(ref);
@@ -910,34 +1074,20 @@ function LinksShop() {
       <div className="container">
         <div className="section-label fade-up">Resources</div>
         <div className="section-heading fade-up" style={{ marginBottom: "0.75rem" }}>Gear & Recommendations</div>
-        <p className="fade-up" style={{ color: T.muted, fontSize: "0.85rem", marginBottom: "0.75rem" }}>
+        <p className="fade-up" style={{ color: T.muted, fontSize: "0.85rem", marginBottom: "0.5rem" }}>
           Products and setups that actually fit my work, gym, and lifestyle.
         </p>
-        <p className="fade-up" style={{ fontSize: "0.7rem", color: T.faint, marginBottom: "3rem" }}>
-          Some links may be affiliate links. I only share products or setups that fit my work, gym, or lifestyle content.
+        <p className="fade-up" style={{ fontSize: "0.7rem", color: T.faint, marginBottom: "3.5rem" }}>
+          Some links may be affiliate links. I only share products that fit my content.
         </p>
 
         {LINKS_DATA.map(({ category, items }) => (
-          <div key={category} style={{ marginBottom: "3rem" }}>
-            <div style={{ fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase", color: T.accent, marginBottom: "1rem", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+          <div key={category} className="fade-up" style={{ marginBottom: "3rem" }}>
+            <div style={{ fontSize: "0.62rem", letterSpacing: "0.2em", textTransform: "uppercase", color: T.accent, marginBottom: "1.25rem", display: "flex", alignItems: "center", gap: "0.75rem" }}>
               <span style={{ display: "block", width: "1.5rem", height: "1px", background: T.accent }} />
               {category}
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1px", background: T.border }}>
-              {items.filter((i) => i.active).map((item) => (
-                <div key={item.title} className="card fade-up" style={{ background: T.surface }}>
-                  {/* REPLACE WITH 800x800 PRODUCT IMAGE OR SETUP PHOTO */}
-                  <img src={item.img} alt={item.title} style={{ width: "100%", height: "160px", objectFit: "cover", filter: "brightness(0.8)" }} />
-                  <div style={{ padding: "1rem 1.25rem" }}>
-                    <div style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.05rem", marginBottom: "0.4rem" }}>{item.title}</div>
-                    <p style={{ fontSize: "0.78rem", color: T.muted, marginBottom: "1rem" }}>{item.desc}</p>
-                    <a href={item.url !== "PASTE_AFFILIATE_LINK_HERE" ? item.url : "#"} target="_blank" rel="noreferrer" className="btn" style={{ width: "100%", justifyContent: "center", fontSize: "0.7rem" }}>
-                      View ↗
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <SwipeRow items={items} />
           </div>
         ))}
       </div>
