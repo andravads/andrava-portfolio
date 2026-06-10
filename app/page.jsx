@@ -61,7 +61,7 @@ const FEATURED_CONTENT = [
     pillar: "Gym",
     hook: "Progress is easier to trust when you actually track it.",
     // REPLACE WITH 600x800 VIDEO THUMBNAIL FROM YOUR ACTUAL TIKTOK/REELS POST
-    thumbnail: "https://placehold.co/600x800/1a1a1a/888888?text=Gym+Post",
+    thumbnail: "/post1.jpeg",
     url: "PASTE_REAL_POST_URL_HERE",
     metrics: { views: "Input manually", likes: "Input manually" },
     note: "Replace with actual post data.",
@@ -74,7 +74,7 @@ const FEATURED_CONTENT = [
     pillar: "Works",
     hook: "Meetings should be short and actually useful.",
     // REPLACE WITH 600x800 VIDEO THUMBNAIL FROM YOUR ACTUAL TIKTOK/REELS POST
-    thumbnail: "https://placehold.co/600x800/1a1a1a/888888?text=Work+Post",
+    thumbnail: "/post2.JPG",
     url: "PASTE_REAL_POST_URL_HERE",
     metrics: { views: "Input manually", likes: "Input manually" },
     note: "Replace with actual post data.",
@@ -87,7 +87,7 @@ const FEATURED_CONTENT = [
     pillar: "Gym",
     hook: "One more rep. A little more weight. That's it.",
     // REPLACE WITH 600x800 VIDEO THUMBNAIL FROM YOUR ACTUAL TIKTOK/REELS POST
-    thumbnail: "https://placehold.co/600x800/1a1a1a/888888?text=Gym+Reel",
+    thumbnail: "/post3.png",
     url: "PASTE_REAL_POST_URL_HERE",
     metrics: { views: "Input manually", likes: "Input manually" },
     note: "Replace with actual post data.",
@@ -100,7 +100,7 @@ const FEATURED_CONTENT = [
     pillar: "Works",
     hook: "Working across timezones is an underrated skill.",
     // REPLACE WITH 600x800 VIDEO THUMBNAIL FROM YOUR ACTUAL TIKTOK/REELS POST
-    thumbnail: "https://placehold.co/600x800/1a1a1a/888888?text=Travel+Post",
+    thumbnail: "/post4.JPG",
     url: "PASTE_REAL_POST_URL_HERE",
     metrics: { views: "Input manually", likes: "Input manually" },
     note: "Replace with actual post data.",
@@ -140,21 +140,21 @@ const LINKS_DATA = [
         title: "Casual Tee",
         desc: "Clean everyday tee that works for gym and casual wear.",
         url: "https://vt.tokopedia.com/t/ZS92vq5WgTgtW-Gf0K7/",
-        img: "https://placehold.co/400x400/1a1a1a/444?text=Casual+Tee", // REPLACE: /outfit-tee.jpg
+        img: "/outfit-tee.JPEG", // REPLACE: /outfit-tee.jpg
         active: true,
       },
       {
         title: "Neveres Superhuman",
         desc: "Gym wear built for training seriously.",
         url: "https://vt.tokopedia.com/t/ZS92vbNvFJ6ae-7DUTG/",
-        img: "https://placehold.co/400x400/1a1a1a/444?text=Neveres", // REPLACE: /outfit-neveres.jpg
+        img: "/outfit-neveres.JPEG", // REPLACE: /outfit-neveres.jpg
         active: true,
       },
       {
         title: "Casual Shorts",
         desc: "Versatile shorts for gym and off-day use.",
         url: "https://vt.tokopedia.com/t/ZS92vbSHMDbkm-x5ajo/",
-        img: "https://placehold.co/400x400/1a1a1a/444?text=Shorts", // REPLACE: /outfit-shorts.jpg
+        img: "/outfit-shorts.JPEG", // REPLACE: /outfit-shorts.jpg
         active: true,
       },
     ],
@@ -243,6 +243,7 @@ const LINKS_DATA = [
     ],
   },
 ];
+
 
 // ============================================================
 // GLOBAL STYLES
@@ -763,11 +764,11 @@ function Pillars() {
 //   preview-andravads-ig.jpg        → screenshot of @andravads Instagram profile/post
 //   preview-youtube.jpg             → screenshot of your YouTube channel
 const SOCIAL_PREVIEWS = {
-  "TikTok-@gymnyagema":  "/preview-gymnyagema-tiktok.jpg",
-  "TikTok-@andravads":   "/preview-andravads-tiktok.jpg",
+  "TikTok-@gymnyagema":  "/preview-gymnyagema-tiktok.JPEG",
+  "TikTok-@andravads":   "/preview-andravads-tiktok.JPEG",
   "Instagram-@gymnyagema": "/preview-gymnyagema-ig.jpg",
-  "Instagram-@andravads":  "/preview-andravads-ig.jpg",
-  "YouTube-Andrava":     "/preview-youtube.jpg",
+  "Instagram-@andravads":  "/preview-andravads-ig.JPEG",
+  "YouTube-Andrava":     "/preview-youtube.JPEG",
 };
 
 function SocialCard({ platform, handle, focus, url, note }) {
