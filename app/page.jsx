@@ -108,6 +108,26 @@ const FEATURED_CONTENT = [
 ];
 
 // ============================================================
+// PALETTE & TOKENS
+// ============================================================
+const T = {
+  bg: "#0e0e0e",
+  surface: "#161616",
+  surface2: "#1e1e1e",
+  border: "rgba(255,255,255,0.07)",
+  borderMid: "rgba(255,255,255,0.12)",
+  text: "#f0ece4",
+  muted: "#888880",
+  faint: "#444440",
+  accent: "#b8a98a", // warm gold-beige
+  accentDim: "rgba(184,169,138,0.15)",
+  gym: "#4a7c6b",    // muted steel teal
+  gymDim: "rgba(74,124,107,0.15)",
+  work: "#5a6b8a",   // slate blue
+  workDim: "rgba(90,107,138,0.15)",
+};
+
+// ============================================================
 // LINKS / SHOP DATA
 // Images: drop 400x400 product photos in /public named as shown in img field
 // ============================================================
@@ -223,26 +243,6 @@ const LINKS_DATA = [
     ],
   },
 ];
-
-// ============================================================
-// PALETTE & TOKENS
-// ============================================================
-const T = {
-  bg: "#0e0e0e",
-  surface: "#161616",
-  surface2: "#1e1e1e",
-  border: "rgba(255,255,255,0.07)",
-  borderMid: "rgba(255,255,255,0.12)",
-  text: "#f0ece4",
-  muted: "#888880",
-  faint: "#444440",
-  accent: "#b8a98a", // warm gold-beige
-  accentDim: "rgba(184,169,138,0.15)",
-  gym: "#4a7c6b",    // muted steel teal
-  gymDim: "rgba(74,124,107,0.15)",
-  work: "#5a6b8a",   // slate blue
-  workDim: "rgba(90,107,138,0.15)",
-};
 
 // ============================================================
 // GLOBAL STYLES
