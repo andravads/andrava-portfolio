@@ -147,7 +147,7 @@ const LINKS_DATA = [
         title: "Neveres Superhuman",
         desc: "Gym wear built for training seriously.",
         url: "https://vt.tokopedia.com/t/ZS92vbNvFJ6ae-7DUTG/",
-        img: "/outfit-neveres.JPEG", // REPLACE: /outfit-neveres.jpg
+        img: "/outfit-neveres.jpg", // REPLACE: /outfit-neveres.jpg
         active: true,
       },
       {
@@ -165,22 +165,22 @@ const LINKS_DATA = [
       {
         title: "Resistance Bands Set",
         desc: "What I use for warm-up and home sessions.",
-        url: "https://vt.tokopedia.com/t/ZS9237GXxRJCy-83L7I/",
-        img: "https://placehold.co/400x400/1a1a1a/444?text=Bands", // REPLACE: /gear-bands.jpg
+        url: "https://vt.tokopedia.com/t/ZS9237P2pMgnY-Td0nB",
+        img: "gear-bands.jpeg", // REPLACE: /gear-bands.jpg
         active: true,
       },
       {
         title: "Gym Belt",
         desc: "For heavy compound lifts.",
         url: "https://vt.tokopedia.com/t/ZS923vahBgQPs-KakWd/",
-        img: "https://placehold.co/400x400/1a1a1a/444?text=Gym+Belt", // REPLACE: /gear-belt.jpg
+        img: "/gear-belt.jpeg", // REPLACE: /gear-belt.jpg
         active: true,
       },
       {
         title: "Wrist Strap",
         desc: "Extra wrist support for pulling movements.",
         url: "https://vt.tokopedia.com/t/ZS9237GXxRJCy-83L7I/",
-        img: "https://placehold.co/400x400/1a1a1a/444?text=Wrist+Strap", // REPLACE: /gear-wriststrap.jpg
+        img: "/gear-wriststrap.jpeg", // REPLACE: /gear-wriststrap.jpg
         active: true,
       },
     ],
@@ -192,14 +192,14 @@ const LINKS_DATA = [
         title: "Whey Protein (Current)",
         desc: "What I'm currently using for post-training recovery.",
         url: "https://vt.tokopedia.com/t/ZS92vqHfkfBHY-PrFtA/",
-        img: "https://placehold.co/400x400/1a1a1a/444?text=Whey+Protein", // REPLACE: /supp-whey.jpg
+        img: "/supp-whey.jpeg", // REPLACE: /supp-whey.jpg
         active: true,
       },
       {
         title: "Creatine",
         desc: "Simple, effective, science-backed.",
         url: "https://vt.tokopedia.com/t/ZS92vbMypgxjg-jbWrE/",
-        img: "https://placehold.co/400x400/1a1a1a/444?text=Creatine", // REPLACE: /supp-creatine.jpg
+        img: "/supp-creatine.jpeg", // REPLACE: /supp-creatine.jpg
         active: true,
       },
     ],
